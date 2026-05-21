@@ -80,7 +80,9 @@
 }
 
 .btn-secondary:hover {
-    background: var(--color-accent);
+    background: rgba(255, 107, 0, 0.2);
+    color: #ffffff;
+    border-color: var(--color-accent);
     transform: translateY(-2px);
 }
 

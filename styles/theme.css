@@ -1,51 +1,56 @@
 /* ============================================
-   LOUVOR 24/7 - THEME VARIABLES
-   Based on church logo colors
+   IGREJA 24/7 - THEME VARIABLES
+   Dark Black Premium - Based on logo oficial
    ============================================ */
 
 :root {
-    /* Primary Colors - Based on logo dark background */
-    --color-primary: #0a0e27;
-    --color-primary-light: #1a1f3a;
-    --color-primary-dark: #050814;
+    /* Primary Colors - Dark Black Premium */
+    --color-primary: #050505;
+    --color-primary-light: #0f0f0f;
+    --color-primary-dark: #000000;
     
-    /* Accent Colors - Based on logo orange/gold flame */
-    --color-accent: #ff6b35;
-    --color-accent-light: #ff8c5a;
-    --color-accent-dark: #e55a2b;
+    /* Accent Colors - Orange/Amber Intense */
+    --color-accent: #ff6b00;
+    --color-accent-light: #ff8c00;
+    --color-accent-dark: #e65100;
     
-    /* Supporting Colors */
-    --color-secondary: #2d3561;
-    --color-tertiary: #4a5578;
+    /* Secondary Accent - Burnt Gold */
+    --color-secondary: #d4af37;
+    --color-secondary-light: #f4c430;
+    --color-secondary-dark: #b8960c;
+    
+    /* Supporting Colors - Premium Gray */
+    --color-tertiary: #1a1a1a;
+    --color-quaternary: #2a2a2a;
     
     /* Text Colors */
     --color-text-primary: #ffffff;
-    --color-text-secondary: #a0a0a0;
-    --color-text-muted: #6b7280;
+    --color-text-secondary: #e0e0e0;
+    --color-text-muted: #b0b0b0;
     
     /* Background Colors */
-    --color-bg-primary: #0a0e27;
-    --color-bg-secondary: #1a1f3a;
-    --color-bg-card: rgba(26, 31, 58, 0.8);
-    --color-bg-glass: rgba(10, 14, 39, 0.7);
+    --color-bg-primary: #050505;
+    --color-bg-secondary: #0f0f0f;
+    --color-bg-card: rgba(15, 15, 15, 0.9);
+    --color-bg-glass: rgba(5, 5, 5, 0.8);
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
-    --gradient-accent: linear-gradient(135deg, #ff6b35 0%, #ff8c5a 100%);
-    --gradient-hero: linear-gradient(180deg, #0a0e27 0%, #1a1f3a 50%, #0a0e27 100%);
-    --gradient-glow: radial-gradient(circle at center, rgba(255, 107, 53, 0.15) 0%, transparent 70%);
+    /* Gradients - Cinematic Dark */
+    --gradient-primary: linear-gradient(135deg, #050505 0%, #0f0f0f 100%);
+    --gradient-accent: linear-gradient(135deg, #ff6b00 0%, #d4af37 100%);
+    --gradient-hero: linear-gradient(180deg, #050505 0%, #0f0f0f 50%, #050505 100%);
+    --gradient-glow: radial-gradient(circle at center, rgba(255, 107, 0, 0.25) 0%, transparent 70%);
     
-    /* Shadows */
-    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
-    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
-    --shadow-glow: 0 0 20px rgba(255, 107, 53, 0.3);
-    --shadow-glow-strong: 0 0 40px rgba(255, 107, 53, 0.5);
+    /* Shadows - Cinematic */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 4px 8px rgba(255, 107, 0, 0.1);
+    --shadow-lg: 0 8px 16px rgba(255, 107, 0, 0.15);
+    --shadow-glow: 0 0 20px rgba(255, 107, 0, 0.3);
+    --shadow-glow-strong: 0 0 40px rgba(255, 107, 0, 0.4);
     
     /* Glassmorphism */
-    --glass-bg: rgba(26, 31, 58, 0.6);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --glass-blur: 12px;
+    --glass-bg: rgba(5, 5, 5, 0.8);
+    --glass-border: rgba(255, 107, 0, 0.15);
+    --glass-blur: 15px;
     
     /* Spacing */
     --spacing-xs: 0.5rem;

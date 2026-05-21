@@ -33,15 +33,15 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--glass-bg);
-    backdrop-filter: blur(var(--glass-blur));
+    background: var(--color-bg-card);
+    
     border-bottom: 1px solid var(--glass-border);
     z-index: var(--z-fixed);
     transition: all var(--transition-base);
 }
 
 .navbar.scrolled {
-    background: rgba(10, 14, 39, 0.95);
+    background: rgba(15, 15, 15, 0.95);
 }
 
 .nav-content {
@@ -179,7 +179,7 @@
     font-weight: var(--font-bold);
     color: var(--color-text-primary);
     margin-bottom: var(--spacing-md);
-    text-shadow: 0 0 30px rgba(255, 107, 53, 0.3);
+    text-shadow: 0 0 50px rgba(255, 107, 0, 0.5);
 }
 
 .hero-bible {
@@ -220,7 +220,7 @@
 
 .worship-times {
     background: var(--color-bg-card);
-    backdrop-filter: blur(var(--glass-blur));
+    
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
     padding: var(--spacing-xl);
@@ -451,7 +451,7 @@
 /* Bible Section */
 .bible-reader {
     background: var(--color-bg-card);
-    backdrop-filter: blur(var(--glass-blur));
+    
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
     overflow: hidden;
@@ -654,7 +654,7 @@
 
 .stat-card {
     background: var(--color-bg-card);
-    backdrop-filter: blur(var(--glass-blur));
+    
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
     padding: var(--spacing-lg);
@@ -750,8 +750,8 @@
 }
 
 .admin-navbar {
-    background: var(--glass-bg);
-    backdrop-filter: blur(var(--glass-blur));
+    background: var(--color-bg-card);
+    
     border-bottom: 1px solid var(--glass-border);
     padding: var(--spacing-md) 0;
     position: sticky;
@@ -887,7 +887,7 @@
 
 .stat-card {
     background: var(--color-bg-card);
-    backdrop-filter: blur(var(--glass-blur));
+    
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
     padding: var(--spacing-lg);
@@ -1008,7 +1008,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: var(--color-bg-card);
-    backdrop-filter: blur(var(--glass-blur));
+    
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
     z-index: var(--z-modal);

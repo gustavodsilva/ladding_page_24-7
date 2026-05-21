@@ -1,0 +1,163 @@
+{
+  "livros": [
+    {
+      "nome": "Gênesis",
+      "abreviacao": "gn",
+      "capitulos": [
+        {
+          "numero": 1,
+          "versiculos": [
+            {"numero": 1, "texto": "No princípio criou Deus os céus e a terra."},
+            {"numero": 2, "texto": "E a terra era sem forma e vazia; e havia trevas sobre a face do abismo, e o Espírito de Deus se movia sobre a face das águas."},
+            {"numero": 3, "texto": "E disse Deus: Haja luz; e houve luz."},
+            {"numero": 4, "texto": "E viu Deus que a luz era boa; e fez Deus separação entre a luz e as trevas."},
+            {"numero": 5, "texto": "E Deus chamou à luz Dia; e às trevas chamou Noite. E foi a tarde e a manhã, o dia primeiro."},
+            {"numero": 6, "texto": "E disse Deus: Haja uma expansão no meio das águas, e haja separação entre águas e águas."},
+            {"numero": 7, "texto": "E fez Deus a expansão, e fez separação entre as águas que estavam debaixo da expansão e as águas que estavam sobre a expansão; e assim foi."},
+            {"numero": 8, "texto": "E chamou Deus à expansão Céus, e foi a tarde e a manhã, o dia segundo."},
+            {"numero": 9, "texto": "E disse Deus: Ajuntem-se as águas debaixo dos céus num lugar; e apareça a parte seca; e assim foi."},
+            {"numero": 10, "texto": "E chamou Deus à parte seca Terra; e ao ajuntamento das águas chamou Mares; e viu Deus que era bom."}
+          ]
+        },
+        {
+          "numero": 2,
+          "versiculos": [
+            {"numero": 1, "texto": "Assim os céus, e a terra, e todo o seu exército foram acabados."},
+            {"numero": 2, "texto": "E havendo Deus acabado no dia sétimo a sua obra que tinha feito, descansou no sétimo dia de toda a sua obra que tinha feito."},
+            {"numero": 3, "texto": "E abençoou Deus o dia sétimo, e o santificou; porque nele descansou de toda a sua obra que Deus criara e fizera."},
+            {"numero": 4, "texto": "Esta é a origem dos céus e da terra, quando foram criados, no dia em que o Senhor Deus fez a terra e os céus."},
+            {"numero": 5, "texto": "E toda a planta do campo que ainda não estava na terra, e toda a erva do campo que ainda não brotava; porque ainda o Senhor Deus não tinha feito chover sobre a terra, e não havia homem para lavrar a terra."},
+            {"numero": 6, "texto": "Um vapor, porém, subia da terra, e regava toda a face da terra."},
+            {"numero": 7, "texto": "E formou o Senhor Deus o homem do pó da terra, e soprou em seus narizes o fôlego da vida; e o homem foi feito alma vivente."},
+            {"numero": 8, "texto": "E plantou o Senhor Deus um jardim no Éden, do lado oriental; e pôs ali o homem que tinha formado."},
+            {"numero": 9, "texto": "E o Senhor Deus fez brotar da terra toda a árvore agradável à vista, e boa para comida; e a árvore da vida no meio do jardim, e a árvore do conhecimento do bem e do mal."},
+            {"numero": 10, "texto": "E saía um rio do Éden para regar o jardim; e dali se dividia e se tornava em quatro braços."}
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Salmos",
+      "abreviacao": "sl",
+      "capitulos": [
+        {
+          "numero": 23,
+          "versiculos": [
+            {"numero": 1, "texto": "O Senhor é o meu pastor; nada me faltará."},
+            {"numero": 2, "texto": "Em verdes pastagens me faz repousar e me conduz a águas tranquilas."},
+            {"numero": 3, "texto": "Restaura-me o vigor. Guia-me nas veredas da justiça por amor do seu nome."},
+            {"numero": 4, "texto": "Ainda que eu ande pelo vale da sombra da morte, não temerei mal algum, porque tu estás comigo; a tua vara e o teu cajado me consolam."},
+            {"numero": 5, "texto": "Preparas-me uma mesa na presença dos meus inimigos; unges a minha cabeça com óleo; o meu cálice transborda."},
+            {"numero": 6, "texto": "Certamente que bondade e misericórdia me seguirão todos os dias da minha vida; e habitarei na casa do Senhor por longos dias."}
+          ]
+        },
+        {
+          "numero": 91,
+          "versiculos": [
+            {"numero": 1, "texto": "Aquele que habita no esconderijo do Altíssimo, à sombra do Onipotente descansará."},
+            {"numero": 2, "texto": "Direi do Senhor: Ele é o meu Deus, o meu refúgio, a minha fortaleza, e nele confiarei."},
+            {"numero": 3, "texto": "Certamente ele te livrará do laço do passarinheiro, e da peste perniciosa."},
+            {"numero": 4, "texto": "Ele te cobrirá com as suas penas, e debaixo das suas asas te estarás seguro; a sua verdade será escudo e broquel."},
+            {"numero": 5, "texto": "Não terás medo do espírito noturno, nem da seta que voa de dia."},
+            {"numero": 6, "texto": "Nem da peste que anda na escuridão, nem da mortandade que assola ao meio-dia."},
+            {"numero": 7, "texto": "Mil cairão ao teu lado, e dez mil à tua direita, mas tu não serás atingido."},
+            {"numero": 8, "texto": "Somente com os teus olhos contemplarás, e verás a recompensa dos ímpios."},
+            {"numero": 9, "texto": "Porque tu, ó Senhor, és o meu refúgio. No Altíssimo fizeste a tua habitação."},
+            {"numero": 10, "texto": "Nenhum mal te sucederá, nem praga alguma chegará à tua tenda."}
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Provérbios",
+      "abreviacao": "pv",
+      "capitulos": [
+        {
+          "numero": 3,
+          "versiculos": [
+            {"numero": 1, "texto": "Filho meu, não te esqueças da minha lei, e o teu coração guarde os meus mandamentos."},
+            {"numero": 2, "texto": "Porque eles aumentarão os teus dias, e te acrescentarão anos de vida e paz."},
+            {"numero": 3, "texto": "Não te desamparem a benignidade e a verdade; ata-as ao teu pescoço, escreve-as na tábua do teu coração."},
+            {"numero": 4, "texto": "E acharás graça e bom entendimento aos olhos de Deus e dos homens."},
+            {"numero": 5, "texto": "Confia no Senhor de todo o teu coração, e não te estribes no teu próprio entendimento."},
+            {"numero": 6, "texto": "Reconhece-o em todos os teus caminhos, e ele endireitará as tuas veredas."}
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Isaías",
+      "abreviacao": "is",
+      "capitulos": [
+        {
+          "numero": 40,
+          "versiculos": [
+            {"numero": 28, "texto": "Não sabes, não ouviste que o Deus eterno, o Senhor, o Criador dos fins da terra, nem se cansa nem se fatiga? É inescrutável o seu entendimento."},
+            {"numero": 29, "texto": "Dá força ao cansado, e aumenta as forças ao que não tem nenhum vigor."},
+            {"numero": 30, "texto": "Os moços se cansarão e se fatigarão, e os jovens certamente cairão."},
+            {"numero": 31, "texto": "Mas os que esperam no Senhor renovarão as suas forças; subirão com asas como águias; correrão, e não se cansarão; caminharão, e não se fatigarão."}
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Mateus",
+      "abreviacao": "mt",
+      "capitulos": [
+        {
+          "numero": 6,
+          "versiculos": [
+            {"numero": 9, "texto": "Portanto, vós orareis assim: Pai nosso, que estás nos céus, santificado seja o teu nome;"},
+            {"numero": 10, "texto": "Venha o teu reino, seja feita a tua vontade, assim na terra como no céu;"},
+            {"numero": 11, "texto": "O pão nosso de cada dia nos dá hoje;"},
+            {"numero": 12, "texto": "E perdoa-nos as nossas dívidas, assim como nós perdoamos aos nossos devedores;"},
+            {"numero": 13, "texto": "E não nos induzas à tentação, mas livra-nos do mal; porque teu é o reino, e o poder, e a glória, para sempre. Amém."}
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "João",
+      "abreviacao": "jo",
+      "capitulos": [
+        {
+          "numero": 3,
+          "versiculos": [
+            {"numero": 16, "texto": "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna."},
+            {"numero": 17, "texto": "Porque Deus enviou o seu Filho ao mundo, não para que condenasse o mundo, mas para que o mundo fosse salvo por ele."}
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Romanos",
+      "abreviacao": "rm",
+      "capitulos": [
+        {
+          "numero": 8,
+          "versiculos": [
+            {"numero": 28, "texto": "E sabemos que todas as coisas contribuem juntamente para o bem daqueles que amam a Deus, daqueles que são chamados segundo o seu propósito."},
+            {"numero": 29, "texto": "Porque os que dantes conheceu também os predestinou para serem conformes à imagem de seu Filho, a fim de que ele seja o primogênito entre muitos irmãos."},
+            {"numero": 30, "texto": "E aos que predestinou a estes também chamou; e aos que chamou a estes também justificou; e aos que justificou a estes também glorificou."},
+            {"numero": 31, "texto": "Que diremos, pois, a estas coisas? Se Deus é por nós, quem será contra nós?"}
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Filipenses",
+      "abreviacao": "fp",
+      "capitulos": [
+        {
+          "numero": 4,
+          "versiculos": [
+            {"numero": 6, "texto": "Não estejais inquietos por coisa alguma; antes as vossas petições sejam em tudo conhecidas diante de Deus pela oração e súplica, com ação de graças."},
+            {"numero": 7, "texto": "E a paz de Deus, que excede todo o entendimento, guardará os vossos corações e os vossos pensamentos em Cristo Jesus."},
+            {"numero": 8, "texto": "Quanto ao mais, irmãos, tudo o que é verdadeiro, tudo o que é honesto, tudo o que é justo, tudo o que é puro, tudo o que é amável, tudo o que é de boa fama, se há alguma virtude, e se há algum louvor, nisso pensai."},
+            {"numero": 13, "texto": "Posso todas as coisas naquele que me fortalece."}
+          ]
+        }
+      ]
+    }
+  ]
+}

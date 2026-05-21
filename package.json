@@ -1,0 +1,24 @@
+{
+  "name": "louvor-24-7",
+  "version": "1.0.0",
+  "description": "Plataforma moderna para o ministério de louvor da igreja",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx live-server",
+    "build": "echo 'No build process required for static HTML'",
+    "deploy": "vercel"
+  },
+  "keywords": [
+    "louvor",
+    "igreja",
+    "musica",
+    "playlist",
+    "youtube",
+    "supabase"
+  ],
+  "author": "Louvor 24/7",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

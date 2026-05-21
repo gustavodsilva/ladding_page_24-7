@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Louvor 24/7 - Plataforma oficial da igreja com repertório de louvor, playlists e conteúdo cristão">
+    <meta name="keywords" content="louvor, igreja, música cristã, playlists, repertório">
+    <title>Louvor 24/7 - Ministério de Louvor</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/sections.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="image/Imagem1.png">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <img src="image/Imagem1.png" alt="Logo" class="loading-logo">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="nav-logo">
+                    <img src="image/Imagem1.png" alt="Louvor 24/7">
+                </a>
+                
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#playlist" class="nav-link">Playlist</a></li>
+                    <li><a href="#repertorio" class="nav-link">Repertório</a></li>
+                    <li><a href="#blog" class="nav-link">Notícias</a></li>
+                    <li><a href="#biblia" class="nav-link">Bíblia</a></li>
+                    <li><a href="#admin" class="nav-link btn-login">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-overlay" id="nav-overlay"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-glow"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <img src="image/Imagem1.png" alt="Logo da Igreja" class="hero-logo fade-in">
+                <h1 class="hero-title fade-in-up">Louvor 24/7</h1>
+                <p class="hero-bible fade-in-up" id="bible-verse">"Cantai ao Senhor um cântico novo, porque ele fez coisas maravilhosas" - Salmos 98:1</p>
+                <div class="hero-buttons fade-in-up">
+                    <a href="https://youtube.com/playlist?list=YOUR_PLAYLIST_ID" target="_blank" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                        </svg>
+                        Ouvir Playlist
+                    </a>
+                    <a href="#sobre" class="btn btn-secondary">Conhecer Igreja</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Sobre Nossa Igreja</h2>
+            <p class="section-subtitle reveal">Conheça nossa missão, visão e valores</p>
+            
+            <div class="about-grid grid grid-cols-md-2 grid-cols-lg-3">
+                <div class="card reveal">
+                    <div class="card-icon">🎯</div>
+                    <h3>Missão</h3>
+                    <p>Levar o amor de Deus através da música e do louvor, transformando vidas e comunidades.</p>
+                </div>
+                
+                <div class="card reveal">
+                    <div class="card-icon">👁️</div>
+                    <h3>Visão</h3>
+                    <p>Ser uma referência em adoração e louvor, alcançando pessoas para Cristo através da música.</p>
+                </div>
+                
+                <div class="card reveal">
+                    <div class="card-icon">💎</div>
+                    <h3>Valores</h3>
+                    <p>Excelência, autenticidade, comunhão, e paixão por Deus e pelas pessoas.</p>
+                </div>
+            </div>
+            
+            <div class="worship-times reveal">
+                <h3>Horários de Culto</h3>
+                <div class="times-grid">
+                    <div class="time-item">
+                        <span class="day">Domingo</span>
+                        <span class="time">10:00 - 12:00</span>
+                    </div>
+                    <div class="time-item">
+                        <span class="day">Quarta-feira</span>
+                        <span class="time">19:30 - 21:00</span>
+                    </div>
+                    <div class="time-item">
+                        <span class="day">Sábado</span>
+                        <span class="time">18:00 - 20:00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-grid grid grid-cols-sm-2 grid-cols-md-4 reveal">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-label">Membros</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="150">0</span>
+                    <span class="stat-label">Músicas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="25">0</span>
+                    <span class="stat-label">Anos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="1000">0</span>
+                    <span class="stat-label">Vidas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playlist Section -->
+    <section id="playlist" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title reveal">Playlist do Louvor</h2>
+            <p class="section-subtitle reveal">As músicas que tocamos em nossos cultos</p>
+            
+            <div class="playlist-controls reveal">
+                <input type="text" id="search-music" placeholder="Buscar música..." class="search-input">
+                <select id="filter-category" class="filter-select">
+                    <option value="">Todas as categorias</option>
+                    <option value="adoracao">Adoração</option>
+                    <option value="congregacao">Congregação</option>
+                    <option value="oferta">Oferta</option>
+                    <option value="especial">Especial</option>
+                </select>
+            </div>
+            
+            <div class="music-grid card-grid" id="music-grid">
+                <!-- Music cards will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Repertoire Section -->
+    <section id="repertorio" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Repertório Completo</h2>
+            <p class="section-subtitle reveal">Gerencie e explore todo o repertório da igreja</p>
+            
+            <div class="repertoire-controls reveal">
+                <button class="btn btn-primary" id="add-music-btn">Adicionar Música</button>
+                <button class="btn btn-secondary" id="export-btn">Exportar</button>
+            </div>
+            
+            <div class="repertoire-table reveal">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Música</th>
+                            <th>Cantor</th>
+                            <th>Tonalidade</th>
+                            <th>Categoria</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="repertoire-body">
+                        <!-- Table rows will be loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title reveal">Notícias e Eventos</h2>
+            <p class="section-subtitle reveal">Fique por dentro das novidades da igreja</p>
+            
+            <div class="blog-grid card-grid" id="blog-grid">
+                <!-- Blog cards will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Bible Section -->
+    <section id="biblia" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Bíblia Offline</h2>
+            <p class="section-subtitle reveal">Leia a Palavra de Deus onde estiver</p>
+            
+            <div class="bible-reader reveal">
+                <div class="bible-layout">
+                    <div class="bible-sidebar">
+                        <div class="bible-search">
+                            <input type="text" id="bible-search" placeholder="Pesquisar...">
+                        </div>
+                        <div class="bible-books" id="bible-books">
+                            <!-- Books will be loaded dynamically -->
+                        </div>
+                    </div>
+                    <div class="bible-content">
+                        <div class="bible-header">
+                            <h3 id="current-book">Gênesis</h3>
+                            <div class="chapter-nav">
+                                <button class="btn btn-ghost" id="prev-chapter">←</button>
+                                <span id="current-chapter">1</span>
+                                <button class="btn btn-ghost" id="next-chapter">→</button>
+                            </div>
+                        </div>
+                        <div class="bible-text" id="bible-text">
+                            <!-- Bible verses will be loaded dynamically -->
+                        </div>
+                        <div class="bible-controls">
+                            <button class="btn btn-ghost" id="decrease-font">A-</button>
+                            <button class="btn btn-ghost" id="increase-font">A+</button>
+                            <button class="btn btn-ghost" id="toggle-dark">🌙</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Section -->
+    <section id="admin" class="section section-dark">
+        <div class="container">
+            <div class="admin-login" id="admin-login">
+                <h2 class="section-title">Acesso Administrativo</h2>
+                <div class="login-form card">
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="admin-dashboard hidden" id="admin-dashboard">
+                <div class="admin-layout">
+                    <aside class="admin-sidebar">
+                        <div class="sidebar-header">
+                            <img src="image/Imagem1.png" alt="Logo">
+                            <span>Admin</span>
+                        </div>
+                        <nav class="sidebar-nav">
+                            <a href="#" class="sidebar-link active" data-section="dashboard">Dashboard</a>
+                            <a href="#" class="sidebar-link" data-section="musicas">Músicas</a>
+                            <a href="#" class="sidebar-link" data-section="noticias">Notícias</a>
+                            <a href="#" class="sidebar-link" data-section="config">Configurações</a>
+                        </nav>
+                        <button class="btn btn-ghost" id="logout-btn">Sair</button>
+                    </aside>
+                    <main class="admin-content">
+                        <div class="admin-section active" id="section-dashboard">
+                            <h2>Dashboard</h2>
+                            <div class="dashboard-stats grid grid-cols-md-2 grid-cols-lg-4">
+                                <div class="stat-card">
+                                    <span class="stat-value" id="total-musicas">0</span>
+                                    <span class="stat-label">Músicas</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-value" id="total-noticias">0</span>
+                                    <span class="stat-label">Notícias</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-value" id="total-acessos">0</span>
+                                    <span class="stat-label">Acessos</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-value" id="ultima-atualizacao">-</span>
+                                    <span class="stat-label">Última Atualização</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="admin-section hidden" id="section-musicas">
+                            <h2>Gerenciar Músicas</h2>
+                            <button class="btn btn-primary" id="admin-add-music">Adicionar Música</button>
+                            <div class="admin-table">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Música</th>
+                                            <th>Cantor</th>
+                                            <th>Categoria</th>
+                                            <th>Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="admin-musicas-body">
+                                        <!-- Dynamic content -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="admin-section hidden" id="section-noticias">
+                            <h2>Gerenciar Notícias</h2>
+                            <button class="btn btn-primary" id="admin-add-news">Adicionar Notícia</button>
+                            <div class="admin-table">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Título</th>
+                                            <th>Data</th>
+                                            <th>Ações</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="admin-noticias-body">
+                                        <!-- Dynamic content -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="admin-section hidden" id="section-config">
+                            <h2>Configurações</h2>
+                            <div class="config-form card">
+                                <form id="config-form">
+                                    <div class="form-group">
+                                        <label for="youtube-playlist">ID da Playlist do YouTube</label>
+                                        <input type="text" id="youtube-playlist" placeholder="YOUR_PLAYLIST_ID">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="whatsapp-group">ID do Grupo WhatsApp</label>
+                                        <input type="text" id="whatsapp-group" placeholder="GROUP_ID">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Salvar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="image/Imagem1.png" alt="Logo">
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#playlist">Playlist</a>
+                    <a href="#repertorio">Repertório</a>
+                    <a href="#blog">Notícias</a>
+                    <a href="#biblia">Bíblia</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="YouTube">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Louvor 24/7. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="modal-overlay"></div>
+    
+    <div class="modal" id="music-modal">
+        <div class="modal-header">
+            <h3 id="modal-title">Adicionar Música</h3>
+            <button class="modal-close" id="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="music-form">
+                <input type="hidden" id="music-id">
+                <div class="form-group">
+                    <label for="music-name">Nome da Música</label>
+                    <input type="text" id="music-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="music-singer">Cantor/Ministro</label>
+                    <input type="text" id="music-singer" required>
+                </div>
+                <div class="form-group">
+                    <label for="music-link">Link do YouTube</label>
+                    <input type="url" id="music-link" required>
+                </div>
+                <div class="form-group">
+                    <label for="music-key">Tonalidade</label>
+                    <select id="music-key">
+                        <option value="">Selecione</option>
+                        <option value="C">C</option>
+                        <option value="C#">C#</option>
+                        <option value="D">D</option>
+                        <option value="D#">D#</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="F#">F#</option>
+                        <option value="G">G</option>
+                        <option value="G#">G#</option>
+                        <option value="A">A</option>
+                        <option value="A#">A#</option>
+                        <option value="B">B</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="music-category">Categoria</label>
+                    <select id="music-category" required>
+                        <option value="">Selecione</option>
+                        <option value="adoracao">Adoração</option>
+                        <option value="congregacao">Congregação</option>
+                        <option value="oferta">Oferta</option>
+                        <option value="especial">Especial</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="music-notes">Observações</label>
+                    <textarea id="music-notes" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/api.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/player.js"></script>
+    <script src="scripts/whatsapp.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Painel Administrativo - Igreja 24/7">
+    <title>Admin - Igreja 24/7</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/sections.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="image/logo_oficial.jpeg">
+</head>
+<body>
+    <!-- Admin Login -->
+    <div class="admin-login-page" id="admin-login-page">
+        <div class="login-container">
+            <div class="login-card card">
+                <div class="login-header">
+                    <img src="image/logo_oficial.jpeg" alt="Logo" class="login-logo logo-white-bg">
+                    <h1>Painel Administrativo</h1>
+                    <p>Igreja 24/7</p>
+                </div>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" required placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <div class="login-error" id="login-error"></div>
+                </form>
+                <div class="login-footer">
+                    <a href="index.html" class="btn btn-ghost">← Voltar ao site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div class="admin-dashboard-page hidden" id="admin-dashboard-page">
+        <nav class="admin-navbar">
+            <div class="container">
+                <div class="admin-navbar-content">
+                    <a href="index.html" class="admin-nav-logo">
+                        <img src="image/logo_oficial.jpeg" alt="Logo" class="logo-white-bg">
+                        <span>Igreja 24/7</span>
+                    </a>
+                    <button class="btn btn-ghost" id="logout-btn">Sair</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="admin-layout">
+            <aside class="admin-sidebar">
+                <div class="sidebar-header">
+                    <img src="image/logo_oficial.jpeg" alt="Logo" class="logo-white-bg">
+                    <span>Admin</span>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="#" class="sidebar-link active" data-section="dashboard">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                        </svg>
+                        Dashboard
+                    </a>
+                    <a href="#" class="sidebar-link" data-section="musicas">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                        </svg>
+                        Músicas
+                    </a>
+                    <a href="#" class="sidebar-link" data-section="noticias">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                        Notícias
+                    </a>
+                    <a href="#" class="sidebar-link" data-section="config">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+                        </svg>
+                        Configurações
+                    </a>
+                </nav>
+            </aside>
+            <main class="admin-content">
+                <div class="admin-section active" id="section-dashboard">
+                    <h2>Dashboard</h2>
+                    <div class="dashboard-stats grid grid-cols-md-2 grid-cols-lg-4">
+                        <div class="stat-card">
+                            <span class="stat-value" id="total-musicas">0</span>
+                            <span class="stat-label">Músicas</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value" id="total-noticias">0</span>
+                            <span class="stat-label">Notícias</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value" id="total-acessos">0</span>
+                            <span class="stat-label">Acessos</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value" id="ultima-atualizacao">-</span>
+                            <span class="stat-label">Última Atualização</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="admin-section hidden" id="section-musicas">
+                    <div class="section-header">
+                        <h2>Gerenciar Músicas</h2>
+                        <button class="btn btn-primary" id="admin-add-music">Adicionar Música</button>
+                    </div>
+                    <div class="admin-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Música</th>
+                                    <th>Cantor</th>
+                                    <th>Categoria</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody id="admin-musicas-body">
+                                <!-- Dynamic content -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="admin-section hidden" id="section-noticias">
+                    <div class="section-header">
+                        <h2>Gerenciar Notícias</h2>
+                        <button class="btn btn-primary" id="admin-add-news">Adicionar Notícia</button>
+                    </div>
+                    <div class="admin-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Título</th>
+                                    <th>Data</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody id="admin-noticias-body">
+                                <!-- Dynamic content -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="admin-section hidden" id="section-config">
+                    <h2>Configurações</h2>
+                    <div class="config-form card">
+                        <form id="config-form">
+                            <div class="form-group">
+                                <label for="youtube-playlist">ID da Playlist do YouTube</label>
+                                <input type="text" id="youtube-playlist" placeholder="YOUR_PLAYLIST_ID">
+                            </div>
+                            <div class="form-group">
+                                <label for="whatsapp-group">ID do Grupo WhatsApp</label>
+                                <input type="text" id="whatsapp-group" placeholder="GROUP_ID">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Salvar</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="modal-overlay"></div>
+    
+    <div class="modal" id="music-modal">
+        <div class="modal-header">
+            <h3 id="modal-title">Adicionar Música</h3>
+            <button class="modal-close" id="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form id="music-form">
+                <input type="hidden" id="music-id">
+                <div class="form-group">
+                    <label for="music-name">Nome da Música</label>
+                    <input type="text" id="music-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="music-singer">Cantor/Ministro</label>
+                    <input type="text" id="music-singer" required>
+                </div>
+                <div class="form-group">
+                    <label for="music-link">Link do YouTube</label>
+                    <input type="url" id="music-link" required>
+                </div>
+                <div class="form-group">
+                    <label for="music-key">Tonalidade</label>
+                    <select id="music-key">
+                        <option value="">Selecione</option>
+                        <option value="C">C</option>
+                        <option value="C#">C#</option>
+                        <option value="D">D</option>
+                        <option value="D#">D#</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="F#">F#</option>
+                        <option value="G">G</option>
+                        <option value="G#">G#</option>
+                        <option value="A">A</option>
+                        <option value="A#">A#</option>
+                        <option value="B">B</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="music-category">Categoria</label>
+                    <select id="music-category" required>
+                        <option value="">Selecione</option>
+                        <option value="adoracao">Adoração</option>
+                        <option value="congregacao">Congregação</option>
+                        <option value="oferta">Oferta</option>
+                        <option value="especial">Especial</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="music-notes">Observações</label>
+                    <textarea id="music-notes" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/api.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/player.js"></script>
+    <script src="scripts/whatsapp.js"></script>
+    <script src="scripts/admin.js"></script>
+</body>
+</html>

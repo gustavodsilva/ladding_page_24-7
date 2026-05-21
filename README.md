@@ -1,6 +1,6 @@
-# Louvor 24/7
+# Igreja 24/7
 
-Plataforma moderna e profissional para o ministério de louvor da igreja, funcionando como landing page oficial, central de repertório, hub de playlists do YouTube e sistema administrativo.
+Plataforma moderna e profissional para a igreja, funcionando como landing page oficial, central de repertório, hub de playlists do YouTube e sistema administrativo.
 
 ## 🎯 Objetivo
 

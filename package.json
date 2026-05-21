@@ -1,7 +1,7 @@
 {
-  "name": "louvor-24-7",
+  "name": "igreja-24-7",
   "version": "1.0.0",
-  "description": "Plataforma moderna para o ministério de louvor da igreja",
+  "description": "Plataforma moderna para a igreja",
   "main": "index.html",
   "scripts": {
     "dev": "npx live-server",
@@ -9,14 +9,13 @@
     "deploy": "vercel"
   },
   "keywords": [
-    "louvor",
     "igreja",
     "musica",
     "playlist",
     "youtube",
     "supabase"
   ],
-  "author": "Louvor 24/7",
+  "author": "Igreja 24/7",
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.2"

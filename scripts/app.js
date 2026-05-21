@@ -130,7 +130,7 @@ function initScrollAnimations() {
 // Dynamic Bible Verse
 function initBibleVerse() {
     const verses = [
-        { text: "Cantai ao Senhor um cântico novo, porque ele fez coisas maravilhosas", ref: "Salmos 98:1" },
+        { text: "Cantai ao Senhor um cântico novo, porque ele fez coisas maravilhosas", ref: "Lev�tico 6:13" },
         { text: "Louvai ao Senhor, porque ele é bom, porque a sua benignidade dura para sempre", ref: "Salmos 106:1" },
         { text: "De todo o coração te louvarei, Senhor Deus, na presença dos anjos", ref: "Salmos 138:1" },
         { text: "Então cantarei louvores ao teu nome para sempre", ref: "Salmos 61:8" },
@@ -338,7 +338,6 @@ function searchBible(e) {
 function initModals() {
     const modalOverlay = document.getElementById('modal-overlay');
     const modalClose = document.getElementById('modal-close');
-    const addMusicBtn = document.getElementById('add-music-btn');
     const musicModal = document.getElementById('music-modal');
     const musicForm = document.getElementById('music-form');
 
@@ -348,10 +347,6 @@ function initModals() {
 
     if (modalClose) {
         modalClose.addEventListener('click', closeAllModals);
-    }
-
-    if (addMusicBtn) {
-        addMusicBtn.addEventListener('click', () => openModal('music-modal'));
     }
 
     if (musicForm) {
@@ -534,10 +529,6 @@ function renderRepertoireTable(musicList) {
             <td>${music.cantor}</td>
             <td>${music.tonalidade || '-'}</td>
             <td>${music.categoria}</td>
-            <td>
-                <button class="btn btn-ghost btn-sm" onclick="editMusic('${music.id}')">Editar</button>
-                <button class="btn btn-ghost btn-sm" onclick="deleteMusic('${music.id}')">Excluir</button>
-            </td>
         </tr>
     `).join('');
 }
@@ -597,7 +588,7 @@ function getMockNewsData() {
     ];
 }
 
-// Export functions for global access
+// Export functions for global access (only for admin panel)
 window.editMusic = function(id) {
     const music = AppState.musicList.find(m => m.id === id);
     if (music) {

@@ -1,4 +1,4 @@
-/* ============================================
+﻿/* ============================================
    LOUVOR 24/7 - MAIN APPLICATION
    ============================================ */
 
@@ -130,7 +130,7 @@ function initScrollAnimations() {
 // Dynamic Bible Verse
 function initBibleVerse() {
     const verses = [
-        { text: "Cantai ao Senhor um cântico novo, porque ele fez coisas maravilhosas", ref: "Lev�tico 6:13" },
+        { text: "Cantai ao Senhor um cântico novo, porque ele fez coisas maravilhosas", ref: "Lev�tico 6:13" },
         { text: "Louvai ao Senhor, porque ele é bom, porque a sua benignidade dura para sempre", ref: "Salmos 106:1" },
         { text: "De todo o coração te louvarei, Senhor Deus, na presença dos anjos", ref: "Salmos 138:1" },
         { text: "Então cantarei louvores ao teu nome para sempre", ref: "Salmos 61:8" },
@@ -636,3 +636,9 @@ async function deleteMusicById(id) {
         console.error('Error deleting music:', error);
     }
 }
+
+
+
+
+
+

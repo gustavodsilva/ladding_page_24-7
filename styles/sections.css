@@ -247,6 +247,66 @@
     border-radius: var(--radius-md);
 }
 
+/* Units Section */
+.units-grid {
+    display: grid;
+    gap: var(--spacing-lg);
+}
+
+.unit-card {
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.unit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-glow);
+}
+
+.unit-logo {
+    width: 100px;
+    height: auto;
+    margin: 0 auto var(--spacing-md);
+}
+
+.unit-card h3 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text-primary);
+}
+
+.unit-location {
+    color: var(--color-accent);
+    font-size: var(--text-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.unit-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-md);
+}
+
+.schedule-day {
+    font-weight: var(--font-semibold);
+    color: var(--color-text-primary);
+}
+
+.schedule-time {
+    color: var(--color-accent);
+    font-weight: var(--font-semibold);
+}
+
 .time-item .day {
     font-weight: var(--font-semibold);
     color: var(--color-accent);
@@ -1030,6 +1090,30 @@
     align-items: center;
     padding: var(--spacing-lg);
     border-bottom: 1px solid var(--glass-border);
+}
+
+.modal-header h3 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: var(--color-text-secondary);
+    font-size: var(--text-2xl);
+    cursor: pointer;
+    transition: color var(--transition-fast);
+}
+
+.modal-close:hover {
+    color: var(--color-accent);
+}
+
+.modal-body {
+    padding: var(--spacing-lg);
 }
 
 .modal-header h3 {

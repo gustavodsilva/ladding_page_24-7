@@ -255,8 +255,38 @@
             <h2 class="section-title reveal">Notícias e Eventos</h2>
             <p class="section-subtitle reveal">Fique por dentro das novidades da igreja</p>
             
-            <div class="blog-grid card-grid" id="blog-grid">
-                <!-- Blog cards will be loaded dynamically -->
+            <div class="blog-carousel-container">
+                <div class="blog-carousel" id="blog-carousel">
+                    <div class="blog-card card reveal" data-news-id="instituto-24" data-video="image/noticias/aula_bateria.mp4" data-pdf="image/noticias/1.1 apresentacao_geral.pdf">
+                        <div class="blog-media">
+                            <img src="image/noticias/instituto_24.jpg" alt="Instituto 24" class="">
+                            <div class="blog-video-overlay">
+                                <video muted loop playsinline>
+                                    <source src="image/noticias/aula_bateria.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Instituto 24</h3>
+                            <p class="blog-excerpt">Ontem, iniciamos o instituto 24, que tem por objetivo formar novos talentos e compor a equipe de adoração e louvor de Suzano, está sendo uma benção!</p>
+                            <span class="blog-date">Recente</span>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card card reveal" data-news-id="comunhao-familia">
+                        <div class="blog-media">
+                            <img src="image/noticias/comunhao_familia/churrasco.jpeg" alt="Comunhão em Família" class="">
+                        </div>
+                        <div class="blog-content">
+                            <h3>Comunhão em Família</h3>
+                            <p class="blog-excerpt">Toda sexta feira temos a comunhão com a família, venha e traga a sua!</p>
+                            <span class="blog-date">Toda primeira sexta-feira do mês</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-nav carousel-prev" id="blog-carousel-prev">&lt;</button>
+                <button class="carousel-nav carousel-next" id="blog-carousel-next">&gt;</button>
             </div>
         </div>
     </section>
@@ -360,6 +390,28 @@
 
     <!-- Modals -->
     <div class="modal-overlay" id="modal-overlay"></div>
+    
+    <!-- News Detail Modal -->
+    <div class="modal" id="news-detail-modal">
+        <div class="modal-header">
+            <h3 id="news-detail-title">Detalhes da Notícia</h3>
+            <button class="modal-close" id="news-detail-close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="news-detail-content">
+                <div class="news-detail-video">
+                    <video id="news-detail-video" controls>
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+                <div class="news-detail-pdf">
+                    <h4>Apresentação do Projeto</h4>
+                    <iframe id="news-detail-pdf" src="" frameborder="0"></iframe>
+                    <a href="" target="_blank" class="btn btn-secondary" id="news-detail-pdf-link">Baixar PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <div class="modal" id="music-modal">
         <div class="modal-header">

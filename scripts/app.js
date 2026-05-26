@@ -681,3 +681,152 @@ function initUnitsSidebar() {
 document.addEventListener('DOMContentLoaded', () => {
     initUnitsSidebar();
 });
+
+
+// Blog Video Hover Functionality
+function initBlogVideoHover() {
+    const blogMediaElements = document.querySelectorAll('.blog-media');
+    
+    blogMediaElements.forEach(media => {
+        const video = media.querySelector('video');
+        if (!video) return;
+        
+        media.addEventListener('mouseenter', () => {
+            video.play().catch(err => console.log('Video autoplay prevented:', err));
+        });
+        
+        media.addEventListener('mouseleave', () => {
+            video.pause();
+            video.currentTime = 0; // Reset video to beginning
+        });
+    });
+}
+
+// Initialize blog video hover when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    initBlogVideoHover();
+});
+
+
+// News Detail Modal Functionality
+function initNewsDetailModal() {
+    const blogCards = document.querySelectorAll('.blog-card[data-news-id]');
+    const newsDetailModal = document.getElementById('news-detail-modal');
+    const newsDetailClose = document.getElementById('news-detail-close');
+    const newsDetailTitle = document.getElementById('news-detail-title');
+    const newsDetailVideo = document.getElementById('news-detail-video');
+    const newsDetailPdf = document.getElementById('news-detail-pdf');
+    const newsDetailPdfLink = document.getElementById('news-detail-pdf-link');
+    const modalOverlay = document.getElementById('modal-overlay');
+    
+    if (!blogCards.length || !newsDetailModal) return;
+    
+    blogCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const newsId = card.dataset.newsId;
+            const videoSrc = card.dataset.video;
+            const pdfSrc = card.dataset.pdf;
+            const title = card.querySelector('h3').textContent;
+            
+            if (title) newsDetailTitle.textContent = title;
+            if (videoSrc) {
+                newsDetailVideo.querySelector('source').src = videoSrc;
+                newsDetailVideo.load();
+            }
+            if (pdfSrc) {
+                newsDetailPdf.src = pdfSrc;
+                newsDetailPdfLink.href = pdfSrc;
+            }
+            
+            newsDetailModal.classList.add('active');
+            if (modalOverlay) modalOverlay.classList.add('active');
+        });
+    });
+    
+    if (newsDetailClose) {
+        newsDetailClose.addEventListener('click', () => {
+            closeNewsDetailModal();
+        });
+    }
+    
+    if (modalOverlay) {
+        modalOverlay.addEventListener('click', () => {
+            closeNewsDetailModal();
+        });
+    }
+}
+
+function closeNewsDetailModal() {
+    const newsDetailModal = document.getElementById('news-detail-modal');
+    const newsDetailVideo = document.getElementById('news-detail-video');
+    const modalOverlay = document.getElementById('modal-overlay');
+    
+    if (newsDetailModal) newsDetailModal.classList.remove('active');
+    if (modalOverlay) modalOverlay.classList.remove('active');
+    if (newsDetailVideo) {
+        newsDetailVideo.pause();
+        newsDetailVideo.currentTime = 0;
+    }
+}
+
+// Initialize news detail modal when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    initNewsDetailModal();
+});
+
+
+// Blog Carousel Functionality
+function initBlogCarousel() {
+    const carousel = document.getElementById('blog-carousel');
+    const prevBtn = document.getElementById('blog-carousel-prev');
+    const nextBtn = document.getElementById('blog-carousel-next');
+    
+    if (!carousel || !prevBtn || !nextBtn) return;
+    
+    const scrollAmount = carousel.offsetWidth / 2;
+    
+    prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+    
+    nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+    
+    // Auto-scroll every 5 seconds
+    let autoScrollInterval = setInterval(() => {
+        const maxScroll = carousel.scrollWidth - carousel.offsetWidth;
+        if (carousel.scrollLeft >= maxScroll) {
+            carousel.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    }, 5000);
+    
+    // Pause auto-scroll on hover
+    carousel.addEventListener('mouseenter', () => {
+        clearInterval(autoScrollInterval);
+    });
+    
+    carousel.addEventListener('mouseleave', () => {
+        autoScrollInterval = setInterval(() => {
+            const maxScroll = carousel.scrollWidth - carousel.offsetWidth;
+            if (carousel.scrollLeft >= maxScroll) {
+                carousel.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }, 5000);
+    });
+}
+
+// Initialize blog carousel when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    initBlogCarousel();
+});

@@ -642,3 +642,42 @@ async function deleteMusicById(id) {
 
 
 
+
+
+// Units Sidebar Functionality
+function initUnitsSidebar() {
+    const unitsSidebar = document.getElementById('units-sidebar');
+    const sidebarClose = document.getElementById('sidebar-close');
+    const unitsToggles = document.querySelectorAll('.units-toggle');
+    
+    if (!unitsSidebar) return;
+    
+    // Toggle sidebar open/close
+    unitsToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            unitsSidebar.classList.toggle('active');
+        });
+    });
+    
+    // Close sidebar when clicking close button
+    if (sidebarClose) {
+        sidebarClose.addEventListener('click', () => {
+            unitsSidebar.classList.remove('active');
+        });
+    }
+    
+    // Close sidebar when clicking outside
+    document.addEventListener('click', (e) => {
+        if (unitsSidebar.classList.contains('active') &&
+            !unitsSidebar.contains(e.target) &&
+            !e.target.classList.contains('units-toggle')) {
+            unitsSidebar.classList.remove('active');
+        }
+    });
+}
+
+// Initialize units sidebar when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    initUnitsSidebar();
+});
